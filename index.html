@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">MyModel</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Your Name</span></h1>
+      <p>Model | Influencer | Creator</p>
+      <a href="#contact" class="btn">Book Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://via.placeholder.com/300x400" alt="Profile Image">
+      <div>
+        <p>
+          I am a professional model with 5+ years of experience in fashion, commercial, and editorial modeling. I love expressing creativity through photography, runway, and collaboration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Runway</div>
+      <div class="skill">Editorial</div>
+      <div class="skill">Commercial</div>
+      <div class="skill">Posing</div>
+      <div class="skill">Makeup & Styling</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project" onclick="openModal('Project 1')">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+        <h3>Fashion Week '24</h3>
+      </div>
+      <div class="project" onclick="openModal('Project 2')">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+        <h3>Vogue Editorial</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>
+      "An outstanding model to work with. Professional, creative, and always delivers amazing shots!" – Photographer A
+    </blockquote>
+    <blockquote>
+      "Brings energy and elegance to every project. Highly recommended." – Fashion Director B
+    </blockquote>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <p>Detailed description of the selected project goes here...</p>
+    </div>
+  </div>
+</body>
+</html>
